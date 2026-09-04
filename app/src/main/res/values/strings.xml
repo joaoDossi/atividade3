@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Netflix</string>
+    <string name="menu_filmes">Filmes</string>
+    <string name="menu_series">Series</string>
+    <string name="menu_minhalista">Minha Lista</string>
+    <string name="categoria1">Desenho Animado</string>
+    <string name="categoria2">Animais Falantes</string>
+    <string name="categoria3">Emocionante</string>
+</resources>
