@@ -6,4 +6,9 @@
     <string name="categoria1">Desenho Animado</string>
     <string name="categoria2">Animais Falantes</string>
     <string name="categoria3">Emocionante</string>
+    <string name="botaoAssistir">Assistir</string>
+    <string name="botaoLista">MINHA LISTA</string>
+    <string name="botaoInfo">DETALHES</string>
+    <string name="lancamento">Lançamentos</string>
+
 </resources>

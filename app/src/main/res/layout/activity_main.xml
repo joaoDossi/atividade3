@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imagemCapa"
+        android:layout_width="416dp"
+        android:layout_height="380dp"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cartazroboselvagemminscaled" />
 
     <ImageView
         android:id="@+id/logoNetflix"
@@ -98,7 +108,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/categoria2"
         app:layout_constraintEnd_toStartOf="@+id/categoria2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
         app:layout_constraintTop_toTopOf="@+id/categoria2" />
 
     <TextView
@@ -123,9 +133,110 @@
         android:textColor="@color/menu_navegacao"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/categoria2"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/categoria2"
         app:layout_constraintTop_toTopOf="@+id/categoria2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <Button
+        android:id="@+id/botaoAssistir"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icplay"
+        android:text="@string/botaoAssistir"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/botaoInfo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoLista"
+        app:layout_constraintTop_toBottomOf="@+id/categoria2" />
+
+    <Button
+        android:id="@+id/botaoLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/icplus"
+        android:text="@string/botaoLista"
+        app:layout_constraintBottom_toBottomOf="@+id/botaoAssistir"
+        app:layout_constraintEnd_toStartOf="@+id/botaoAssistir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toTopOf="@+id/botaoAssistir" />
+
+    <Button
+        android:id="@+id/botaoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/icinfo"
+        android:text="@string/botaoInfo"
+        app:layout_constraintBottom_toBottomOf="@+id/botaoAssistir"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botaoAssistir"
+        app:layout_constraintTop_toTopOf="@+id/botaoAssistir" />
+
+    <TextView
+        android:id="@+id/lancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lancamento"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVertical1"
+        app:layout_constraintTop_toBottomOf="@+id/botaoAssistir" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@id/guidelineVertical2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/imagemfilme3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/imagemfilme2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
+        app:layout_constraintTop_toBottomOf="@+id/lancamento"
+        app:srcCompat="@drawable/imagemfilme1"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
