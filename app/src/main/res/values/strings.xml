@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Netflix</string>
+    <string name="app_name" translatable="false">Netflix</string>
     <string name="menu_filmes">Filmes</string>
     <string name="menu_series">Series</string>
     <string name="menu_minhalista">Minha Lista</string>
@@ -10,5 +10,4 @@
     <string name="botaoLista">MINHA LISTA</string>
     <string name="botaoInfo">DETALHES</string>
     <string name="lancamento">Lançamentos</string>
-
 </resources>

@@ -234,7 +234,7 @@
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="@id/guidelineVertical1"
         app:layout_constraintTop_toBottomOf="@+id/lancamento"
-        app:srcCompat="@drawable/imagemfilme1"/>
+        app:srcCompat="@drawable/imagemfilme4"/>
 
 
 

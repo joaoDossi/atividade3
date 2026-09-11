@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Netflix</string>
+    <string name="menu_filmes">Movies</string>
+    <string name="menu_series">Series</string>
+    <string name="menu_minhalista">My List</string>
+    <string name="categoria1">Cartoon</string>
+    <string name="categoria2">Talking Animals</string>
+    <string name="categoria3">Touching</string>
+    <string name="botaoAssistir">Play</string>
+    <string name="botaoLista">MY LIST</string>
+    <string name="botaoInfo">DETAILS</string>
+    <string name="lancamento">New releases</string>
+</resources>
